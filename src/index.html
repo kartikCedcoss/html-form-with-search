@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <<div id="wrapper">
+		<div id="add_product_form">
+			<label for="product_sku">
+				<span>Id</span>
+				<input type="text" name="product_sku" id="product_id"> 
+			</label>
+			<label for="product_name">
+				<span> Name</span>
+				<input type="text" name="name" id="product_name">
+			</label>
+			<label for="product_price">
+				<span> Price</span>
+				<input type="text" name="price" id="product_price"> 
+			</label>
+			<label for="product_quantity">
+				<span> Quantity</span>
+				<input type="text" name="quantity" id="product_quantity">                        
+            			</label>
+			<p class="submit">
+				<input type="button" name="add_product" id="fSubmit" value="Submit">
+							</p>
+
+    <div>
+        <label>Select a field:</label>
+        <select id="fields">
+            <option id="dId" >Id</option>
+            <option id="dName" >Name</option>
+            <option id="dPrice" >Price</option>
+            <option id="dQuantity">Quantity</option>
+        </select>
+        <input id="searchElement" type="text">
+        <input type="button" id="fSearch" value="Search"> 
+        <div id="result" ></div>
+        
+
+    </div>
+</div>
+
+<script src="myscript.js"></script>
+</body>
+
+</html>
