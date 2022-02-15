@@ -18,7 +18,7 @@ $("#fSubmit").click(function () {
 
 function submitProduct(productarr) {
   var html =
-    "<table> <tr> <th> SKU</th> </t> <th>   Name</th> </t> <th> Price </th< </t> <th> Quantity </th> ";
+    "<table> <tr> <th> Id</th> </t> <th>   Name</th> </t> <th> Price </th< </t> <th> Quantity </th> ";
   for (let i = 0; i < productarr.length; i++) {
     html +=
       "<tr><td>" +
@@ -41,7 +41,7 @@ $("#fSearch").click(function () {
   var val = document.getElementById("searchElement").value;
   if (field == "Id") {
     var display =
-          "<table> <tr> <th> SKU</th> </t> <th>   Name</th> </t> <th> Price </th< </t> <th> Quantity </th> ";
+          "<table> <tr> <th> Id</th> </t> <th>   Name</th> </t> <th> Price </th< </t> <th> Quantity </th> ";
     for (let i = 0; i < productarr.length; i++) {
       if (productarr[i].id == val) {
         
@@ -65,7 +65,7 @@ $("#fSearch").click(function () {
     display += '</table>';
   } else if (field == "Name") {
     var display =
-            "<table> <tr> <th> SKU</th> </t> <th>   Name</th> </t> <th> Price </th< </t> <th> Quantity </th> ";
+            "<table> <tr> <th> Id</th> </t> <th>   Name</th> </t> <th> Price </th< </t> <th> Quantity </th> ";
     for (let i = 0; i < productarr.length; i++) {
         if (productarr[i].name == val) {
           
@@ -90,7 +90,7 @@ $("#fSearch").click(function () {
       display += '</table>';
   } else if (field == "Price") {
     var display =
-            "<table> <tr> <th> SKU</th> </t> <th>   Name</th> </t> <th> Price </th< </t> <th> Quantity </th> ";
+            "<table> <tr> <th> ID</th> </t> <th>   Name</th> </t> <th> Price </th< </t> <th> Quantity </th> ";
     for (let i = 0; i < productarr.length; i++) {
         if (productarr[i].price == val) {
           
@@ -114,7 +114,7 @@ $("#fSearch").click(function () {
       display += '</table>';
   } else {
     var display =
-            "<table> <tr> <th> SKU</th> </t> <th>   Name</th> </t> <th> Price </th< </t> <th> Quantity </th> ";
+            "<table> <tr> <th> Id</th> </t> <th>   Name</th> </t> <th> Price </th< </t> <th> Quantity </th> ";
     for (let i = 0; i < productarr.length; i++) {
         if (productarr[i].quantity == val) {
           
