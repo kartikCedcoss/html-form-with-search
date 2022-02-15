@@ -41,10 +41,10 @@ $("#fSearch").click(function () {
   var val = document.getElementById("searchElement").value;
   if (field == "Id") {
     var display =
-          "<table> <tr> <th> SKU</th> </t> <th>   Name</th> </t> <th> Price </th< </t> <th> Quantity </th> ";
+    "<table> <tr> <th> SKU</th> </t> <th>   Name</th> </t> <th> Price </th< </t> <th> Quantity </th> ";
     for (let i = 0; i < productarr.length; i++) {
       if (productarr[i].id == val) {
-        
+       
         display +=
           "<tr> <td>" +
           productarr[i].id +
@@ -56,16 +56,14 @@ $("#fSearch").click(function () {
           productarr[i].quantity +
           "</td><tr>";
           
-          
+         
           //console.log("hello2")
           document.getElementById("result").innerHTML = display;
-      
+          
         }
     }
     display += '</table>';
   } else if (field == "Name") {
-    var display =
-            "<table> <tr> <th> SKU</th> </t> <th>   Name</th> </t> <th> Price </th< </t> <th> Quantity </th> ";
     for (let i = 0; i < productarr.length; i++) {
         if (productarr[i].name == val) {
           
@@ -80,20 +78,18 @@ $("#fSearch").click(function () {
             productarr[i].quantity +
             "</td><tr>";
             
-            
+            display += '</table>';
             
             document.getElementById("result").innerHTML = display;
         
           }
       }
 
-      display += '</table>';
   } else if (field == "Price") {
-    var display =
-            "<table> <tr> <th> SKU</th> </t> <th>   Name</th> </t> <th> Price </th< </t> <th> Quantity </th> ";
     for (let i = 0; i < productarr.length; i++) {
         if (productarr[i].price == val) {
-          
+          var display =
+            "<table> <tr> <th> SKU</th> </t> <th>   Name</th> </t> <th> Price </th< </t> <th> Quantity </th> ";
           display +=
             "<tr> <td>" +
             productarr[i].id +
@@ -105,19 +101,17 @@ $("#fSearch").click(function () {
             productarr[i].quantity +
             "</td><tr>";
             
-           
+            display += '</table>';
             
             document.getElementById("result").innerHTML = display;
         
           }
       }
-      display += '</table>';
   } else {
-    var display =
-            "<table> <tr> <th> SKU</th> </t> <th>   Name</th> </t> <th> Price </th< </t> <th> Quantity </th> ";
     for (let i = 0; i < productarr.length; i++) {
         if (productarr[i].quantity == val) {
-          
+          var display =
+            "<table> <tr> <th> SKU</th> </t> <th>   Name</th> </t> <th> Price </th< </t> <th> Quantity </th> ";
           display +=
             "<tr> <td>" +
             productarr[i].id +
@@ -129,13 +123,12 @@ $("#fSearch").click(function () {
             productarr[i].quantity +
             "</td><tr>";
             
-           
+            display += '</table>';
             
             document.getElementById("result").innerHTML = display;
         
           }
       }
-      display += '</table>';
   }
 });
 
